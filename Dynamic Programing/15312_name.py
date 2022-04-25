@@ -11,9 +11,7 @@ for x in range(0, len(boy)):
 def get_name(lst):
     temp = [lst[index] for index in range(0, len(lst))]
     for x in range (0, len(lst) - 2):
-        print(0)
         temp = [((temp[index] + temp[index + 1]) % 10) for index in range(0, len(temp) - 1)]
-        print(temp)
     return temp[0] * 10 + temp[1]
 
 print(get_name(res))
