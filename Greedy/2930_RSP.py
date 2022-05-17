@@ -31,9 +31,6 @@ def winning_func(friends, data):
             #return
 
 winning = []
-for _ in range(round):
-    winning.append(winning_func(data))
-
 
 for round_index in range(round):
     for friends_index in range(friends_count):
