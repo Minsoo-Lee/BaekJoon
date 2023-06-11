@@ -1,0 +1,803 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13301_tile",
+        "description": "Dynamic Programing.13301_tile",
+        "peekOfCode": "N = int(input())\na = 4\nb = 6\nif N == 1:\n    print(a)\nelif N == 2:\n    print(b)\nelse:\n    for _ in range(3, N + 1):\n        result = a + b",
+        "detail": "Dynamic Programing.13301_tile",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13301_tile",
+        "description": "Dynamic Programing.13301_tile",
+        "peekOfCode": "a = 4\nb = 6\nif N == 1:\n    print(a)\nelif N == 2:\n    print(b)\nelse:\n    for _ in range(3, N + 1):\n        result = a + b\n        a = b",
+        "detail": "Dynamic Programing.13301_tile",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13301_tile",
+        "description": "Dynamic Programing.13301_tile",
+        "peekOfCode": "b = 6\nif N == 1:\n    print(a)\nelif N == 2:\n    print(b)\nelse:\n    for _ in range(3, N + 1):\n        result = a + b\n        a = b\n        b = result",
+        "detail": "Dynamic Programing.13301_tile",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13699_recurrence",
+        "description": "Dynamic Programing.13699_recurrence",
+        "peekOfCode": "N = int(input())\narr = [0 for _ in range(N + 1)]\narr[0] = 1\nfor i in range(1, N + 1):\n    for j in range(0, i):\n        arr[i] += arr[j] * arr[i - j - 1]\nprint(arr[N])",
+        "detail": "Dynamic Programing.13699_recurrence",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13699_recurrence",
+        "description": "Dynamic Programing.13699_recurrence",
+        "peekOfCode": "arr = [0 for _ in range(N + 1)]\narr[0] = 1\nfor i in range(1, N + 1):\n    for j in range(0, i):\n        arr[i] += arr[j] * arr[i - j - 1]\nprint(arr[N])",
+        "detail": "Dynamic Programing.13699_recurrence",
+        "documentation": {}
+    },
+    {
+        "label": "arr[0]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.13699_recurrence",
+        "description": "Dynamic Programing.13699_recurrence",
+        "peekOfCode": "arr[0] = 1\nfor i in range(1, N + 1):\n    for j in range(0, i):\n        arr[i] += arr[j] * arr[i - j - 1]\nprint(arr[N])",
+        "detail": "Dynamic Programing.13699_recurrence",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Dynamic Programing.14916_change",
+        "description": "Dynamic Programing.14916_change",
+        "peekOfCode": "n = int(input())\nfive_bucks = 0\nresult = [-1]\nwhile five_bucks * 5 <= n:\n    if (n - five_bucks * 5) % 2 == 0:\n        result.append(five_bucks + (n - five_bucks * 5) // 2)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])\nelse:",
+        "detail": "Dynamic Programing.14916_change",
+        "documentation": {}
+    },
+    {
+        "label": "five_bucks",
+        "kind": 5,
+        "importPath": "Dynamic Programing.14916_change",
+        "description": "Dynamic Programing.14916_change",
+        "peekOfCode": "five_bucks = 0\nresult = [-1]\nwhile five_bucks * 5 <= n:\n    if (n - five_bucks * 5) % 2 == 0:\n        result.append(five_bucks + (n - five_bucks * 5) // 2)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])\nelse:\n    result.remove(-1)",
+        "detail": "Dynamic Programing.14916_change",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Dynamic Programing.14916_change",
+        "description": "Dynamic Programing.14916_change",
+        "peekOfCode": "result = [-1]\nwhile five_bucks * 5 <= n:\n    if (n - five_bucks * 5) % 2 == 0:\n        result.append(five_bucks + (n - five_bucks * 5) // 2)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])\nelse:\n    result.remove(-1)\n    print(min(result))",
+        "detail": "Dynamic Programing.14916_change",
+        "documentation": {}
+    },
+    {
+        "label": "get_name",
+        "kind": 2,
+        "importPath": "Dynamic Programing.15312_name",
+        "description": "Dynamic Programing.15312_name",
+        "peekOfCode": "def get_name(lst):\n    temp = [lst[index] for index in range(0, len(lst))]\n    for x in range (0, len(lst) - 2):\n        temp = [((temp[index] + temp[index + 1]) % 10) for index in range(0, len(temp) - 1)]\n    return temp[0] * 10 + temp[1]\nprint(get_name(res))",
+        "detail": "Dynamic Programing.15312_name",
+        "documentation": {}
+    },
+    {
+        "label": "strokes",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15312_name",
+        "description": "Dynamic Programing.15312_name",
+        "peekOfCode": "strokes = [3, 2, 1, 2, 3, 3, 2, 3, 3, 2, 2, 1, 2, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 1]\nboy = input()\ngirl = input()\nres = []\nfor x in range(0, len(boy)):\n    res.append(strokes[ord(boy[x]) - 65])\n    res.append(strokes[ord(girl[x]) - 65])\ndef get_name(lst):\n    temp = [lst[index] for index in range(0, len(lst))]\n    for x in range (0, len(lst) - 2):",
+        "detail": "Dynamic Programing.15312_name",
+        "documentation": {}
+    },
+    {
+        "label": "boy",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15312_name",
+        "description": "Dynamic Programing.15312_name",
+        "peekOfCode": "boy = input()\ngirl = input()\nres = []\nfor x in range(0, len(boy)):\n    res.append(strokes[ord(boy[x]) - 65])\n    res.append(strokes[ord(girl[x]) - 65])\ndef get_name(lst):\n    temp = [lst[index] for index in range(0, len(lst))]\n    for x in range (0, len(lst) - 2):\n        temp = [((temp[index] + temp[index + 1]) % 10) for index in range(0, len(temp) - 1)]",
+        "detail": "Dynamic Programing.15312_name",
+        "documentation": {}
+    },
+    {
+        "label": "girl",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15312_name",
+        "description": "Dynamic Programing.15312_name",
+        "peekOfCode": "girl = input()\nres = []\nfor x in range(0, len(boy)):\n    res.append(strokes[ord(boy[x]) - 65])\n    res.append(strokes[ord(girl[x]) - 65])\ndef get_name(lst):\n    temp = [lst[index] for index in range(0, len(lst))]\n    for x in range (0, len(lst) - 2):\n        temp = [((temp[index] + temp[index + 1]) % 10) for index in range(0, len(temp) - 1)]\n    return temp[0] * 10 + temp[1]",
+        "detail": "Dynamic Programing.15312_name",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15312_name",
+        "description": "Dynamic Programing.15312_name",
+        "peekOfCode": "res = []\nfor x in range(0, len(boy)):\n    res.append(strokes[ord(boy[x]) - 65])\n    res.append(strokes[ord(girl[x]) - 65])\ndef get_name(lst):\n    temp = [lst[index] for index in range(0, len(lst))]\n    for x in range (0, len(lst) - 2):\n        temp = [((temp[index] + temp[index + 1]) % 10) for index in range(0, len(temp) - 1)]\n    return temp[0] * 10 + temp[1]\nprint(get_name(res))",
+        "detail": "Dynamic Programing.15312_name",
+        "documentation": {}
+    },
+    {
+        "label": "pascal",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15489_pascal_triangle1",
+        "description": "Dynamic Programing.15489_pascal_triangle1",
+        "peekOfCode": "pascal = [[0 for x in range(0, R + W + 1)] for x in range(0, R + W + 1)]\npascal[0] = [0]\npascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, R + W + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nresult = 0",
+        "detail": "Dynamic Programing.15489_pascal_triangle1",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[0]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15489_pascal_triangle1",
+        "description": "Dynamic Programing.15489_pascal_triangle1",
+        "peekOfCode": "pascal[0] = [0]\npascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, R + W + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nresult = 0\nfor i in range(0, W):",
+        "detail": "Dynamic Programing.15489_pascal_triangle1",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[1]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15489_pascal_triangle1",
+        "description": "Dynamic Programing.15489_pascal_triangle1",
+        "peekOfCode": "pascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, R + W + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nresult = 0\nfor i in range(0, W):\n    for j in range(0, i + 1):",
+        "detail": "Dynamic Programing.15489_pascal_triangle1",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[2]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15489_pascal_triangle1",
+        "description": "Dynamic Programing.15489_pascal_triangle1",
+        "peekOfCode": "pascal[2] = [1, 1]\nfor i in range(3, R + W + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nresult = 0\nfor i in range(0, W):\n    for j in range(0, i + 1):\n        result += pascal[R + i][C + j - 1]",
+        "detail": "Dynamic Programing.15489_pascal_triangle1",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Dynamic Programing.15489_pascal_triangle1",
+        "description": "Dynamic Programing.15489_pascal_triangle1",
+        "peekOfCode": "result = 0\nfor i in range(0, W):\n    for j in range(0, i + 1):\n        result += pascal[R + i][C + j - 1]\nprint(result)",
+        "detail": "Dynamic Programing.15489_pascal_triangle1",
+        "documentation": {}
+    },
+    {
+        "label": "pascal",
+        "kind": 5,
+        "importPath": "Dynamic Programing.16395_pascal_triangle2",
+        "description": "Dynamic Programing.16395_pascal_triangle2",
+        "peekOfCode": "pascal = [[0 for x in range(31)] for x in range(31)]\npascal[0] = [0]\npascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, n + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nprint(pascal[n][k - 1])",
+        "detail": "Dynamic Programing.16395_pascal_triangle2",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[0]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.16395_pascal_triangle2",
+        "description": "Dynamic Programing.16395_pascal_triangle2",
+        "peekOfCode": "pascal[0] = [0]\npascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, n + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nprint(pascal[n][k - 1])",
+        "detail": "Dynamic Programing.16395_pascal_triangle2",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[1]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.16395_pascal_triangle2",
+        "description": "Dynamic Programing.16395_pascal_triangle2",
+        "peekOfCode": "pascal[1] = [1]\npascal[2] = [1, 1]\nfor i in range(3, n + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nprint(pascal[n][k - 1])",
+        "detail": "Dynamic Programing.16395_pascal_triangle2",
+        "documentation": {}
+    },
+    {
+        "label": "pascal[2]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.16395_pascal_triangle2",
+        "description": "Dynamic Programing.16395_pascal_triangle2",
+        "peekOfCode": "pascal[2] = [1, 1]\nfor i in range(3, n + 1):\n    pascal[i][0] = 1\n    for j in range(1, i - 1):\n        pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j]\n    pascal[i][i - 1] = 1\nprint(pascal[n][k - 1])",
+        "detail": "Dynamic Programing.16395_pascal_triangle2",
+        "documentation": {}
+    },
+    {
+        "label": "phone_recursive",
+        "kind": 2,
+        "importPath": "Dynamic Programing.17202_phone_number",
+        "description": "Dynamic Programing.17202_phone_number",
+        "peekOfCode": "def phone_recursive(lst):\n    if len(lst) == 2:\n        return str(lst[0]) + str(lst[1])\n    temp = [(lst[index] + lst[index + 1]) % 10 for index in range(0, len(lst) - 1)]\n    return phone_recursive(temp)\nprint(phone_recursive(result))",
+        "detail": "Dynamic Programing.17202_phone_number",
+        "documentation": {}
+    },
+    {
+        "label": "boy",
+        "kind": 5,
+        "importPath": "Dynamic Programing.17202_phone_number",
+        "description": "Dynamic Programing.17202_phone_number",
+        "peekOfCode": "boy = input()\ngirl = input()\nresult = []\nfor index in range(0, len(boy)):\n    result.append(ord(boy[index]) - 48)\n    result.append(ord(girl[index]) - 48)\ndef phone_recursive(lst):\n    if len(lst) == 2:\n        return str(lst[0]) + str(lst[1])\n    temp = [(lst[index] + lst[index + 1]) % 10 for index in range(0, len(lst) - 1)]",
+        "detail": "Dynamic Programing.17202_phone_number",
+        "documentation": {}
+    },
+    {
+        "label": "girl",
+        "kind": 5,
+        "importPath": "Dynamic Programing.17202_phone_number",
+        "description": "Dynamic Programing.17202_phone_number",
+        "peekOfCode": "girl = input()\nresult = []\nfor index in range(0, len(boy)):\n    result.append(ord(boy[index]) - 48)\n    result.append(ord(girl[index]) - 48)\ndef phone_recursive(lst):\n    if len(lst) == 2:\n        return str(lst[0]) + str(lst[1])\n    temp = [(lst[index] + lst[index + 1]) % 10 for index in range(0, len(lst) - 1)]\n    return phone_recursive(temp)",
+        "detail": "Dynamic Programing.17202_phone_number",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Dynamic Programing.17202_phone_number",
+        "description": "Dynamic Programing.17202_phone_number",
+        "peekOfCode": "result = []\nfor index in range(0, len(boy)):\n    result.append(ord(boy[index]) - 48)\n    result.append(ord(girl[index]) - 48)\ndef phone_recursive(lst):\n    if len(lst) == 2:\n        return str(lst[0]) + str(lst[1])\n    temp = [(lst[index] + lst[index + 1]) % 10 for index in range(0, len(lst) - 1)]\n    return phone_recursive(temp)\nprint(phone_recursive(result))",
+        "detail": "Dynamic Programing.17202_phone_number",
+        "documentation": {}
+    },
+    {
+        "label": "interest",
+        "kind": 5,
+        "importPath": "Dynamic Programing.19947_investment",
+        "description": "Dynamic Programing.19947_investment",
+        "peekOfCode": "interest = [1.35, 1.2, 1.05]\nyear = [5, 3, 1]\narr = [0 for _ in range(0, total_year + 1)]\narr[0] = seed\nfor i in range(1, total_year + 1):\n    if i >= 5:\n        arr[i] = math.floor(max(arr[i - 5] * 1.35, arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    elif i >= 3:\n        arr[i] = math.floor(max(arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    else:",
+        "detail": "Dynamic Programing.19947_investment",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Dynamic Programing.19947_investment",
+        "description": "Dynamic Programing.19947_investment",
+        "peekOfCode": "year = [5, 3, 1]\narr = [0 for _ in range(0, total_year + 1)]\narr[0] = seed\nfor i in range(1, total_year + 1):\n    if i >= 5:\n        arr[i] = math.floor(max(arr[i - 5] * 1.35, arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    elif i >= 3:\n        arr[i] = math.floor(max(arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    else:\n        arr[i] = math.floor(arr[i - 1] * 1.05)",
+        "detail": "Dynamic Programing.19947_investment",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Dynamic Programing.19947_investment",
+        "description": "Dynamic Programing.19947_investment",
+        "peekOfCode": "arr = [0 for _ in range(0, total_year + 1)]\narr[0] = seed\nfor i in range(1, total_year + 1):\n    if i >= 5:\n        arr[i] = math.floor(max(arr[i - 5] * 1.35, arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    elif i >= 3:\n        arr[i] = math.floor(max(arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    else:\n        arr[i] = math.floor(arr[i - 1] * 1.05)\nprint(arr)",
+        "detail": "Dynamic Programing.19947_investment",
+        "documentation": {}
+    },
+    {
+        "label": "arr[0]",
+        "kind": 5,
+        "importPath": "Dynamic Programing.19947_investment",
+        "description": "Dynamic Programing.19947_investment",
+        "peekOfCode": "arr[0] = seed\nfor i in range(1, total_year + 1):\n    if i >= 5:\n        arr[i] = math.floor(max(arr[i - 5] * 1.35, arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    elif i >= 3:\n        arr[i] = math.floor(max(arr[i - 3] * 1.2, arr[i - 1] * 1.05))\n    else:\n        arr[i] = math.floor(arr[i - 1] * 1.05)\nprint(arr)\nprint(arr[total_year])",
+        "detail": "Dynamic Programing.19947_investment",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "Dynamic Programing.24416_fib-2",
+        "description": "Dynamic Programing.24416_fib-2",
+        "peekOfCode": "def fib(n):\n    fib = [1 for x in range(0, n + 1)]\n    for index in range(3, n + 1):\n        fib[index] = fib[index - 1] + fib[index - 2]\n    return fib[n]\nprint(fib(n))",
+        "detail": "Dynamic Programing.24416_fib-2",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Dynamic Programing.24416_fib-2",
+        "description": "Dynamic Programing.24416_fib-2",
+        "peekOfCode": "n = int(input())\ncount = 1\ndef fib(n):\n    fib = [1 for x in range(0, n + 1)]\n    for index in range(3, n + 1):\n        fib[index] = fib[index - 1] + fib[index - 2]\n    return fib[n]\nprint(fib(n))",
+        "detail": "Dynamic Programing.24416_fib-2",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Dynamic Programing.24416_fib-2",
+        "description": "Dynamic Programing.24416_fib-2",
+        "peekOfCode": "count = 1\ndef fib(n):\n    fib = [1 for x in range(0, n + 1)]\n    for index in range(3, n + 1):\n        fib[index] = fib[index - 1] + fib[index - 2]\n    return fib[n]\nprint(fib(n))",
+        "detail": "Dynamic Programing.24416_fib-2",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2491_suyeol",
+        "description": "Dynamic Programing.2491_suyeol",
+        "peekOfCode": "N = int(input())\narr = list(map(int, input().split()))\nincrease = [1 for _ in range(N)]\ndecrease = [1 for _ in range(N)]\nfor index in range(1, N):\n    if arr[index - 1] <= arr[index]:\n        increase[index] = increase[index - 1] + 1\n    if arr[index - 1] >= arr[index]:\n        decrease[index] = decrease[index - 1] + 1\nprint(max(max(decrease), max(increase)))",
+        "detail": "Dynamic Programing.2491_suyeol",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2491_suyeol",
+        "description": "Dynamic Programing.2491_suyeol",
+        "peekOfCode": "arr = list(map(int, input().split()))\nincrease = [1 for _ in range(N)]\ndecrease = [1 for _ in range(N)]\nfor index in range(1, N):\n    if arr[index - 1] <= arr[index]:\n        increase[index] = increase[index - 1] + 1\n    if arr[index - 1] >= arr[index]:\n        decrease[index] = decrease[index - 1] + 1\nprint(max(max(decrease), max(increase)))",
+        "detail": "Dynamic Programing.2491_suyeol",
+        "documentation": {}
+    },
+    {
+        "label": "increase",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2491_suyeol",
+        "description": "Dynamic Programing.2491_suyeol",
+        "peekOfCode": "increase = [1 for _ in range(N)]\ndecrease = [1 for _ in range(N)]\nfor index in range(1, N):\n    if arr[index - 1] <= arr[index]:\n        increase[index] = increase[index - 1] + 1\n    if arr[index - 1] >= arr[index]:\n        decrease[index] = decrease[index - 1] + 1\nprint(max(max(decrease), max(increase)))",
+        "detail": "Dynamic Programing.2491_suyeol",
+        "documentation": {}
+    },
+    {
+        "label": "decrease",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2491_suyeol",
+        "description": "Dynamic Programing.2491_suyeol",
+        "peekOfCode": "decrease = [1 for _ in range(N)]\nfor index in range(1, N):\n    if arr[index - 1] <= arr[index]:\n        increase[index] = increase[index - 1] + 1\n    if arr[index - 1] >= arr[index]:\n        decrease[index] = decrease[index - 1] + 1\nprint(max(max(decrease), max(increase)))",
+        "detail": "Dynamic Programing.2491_suyeol",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "Dynamic Programing.2748_fib-1",
+        "description": "Dynamic Programing.2748_fib-1",
+        "peekOfCode": "def fib(n):\n    lst = [1 for x in range(0, n + 1)]\n    for i in range(3, n + 1):\n        lst[i] = lst[i - 1] + lst[i - 2]\n    return lst[n]\nprint(fib(n))",
+        "detail": "Dynamic Programing.2748_fib-1",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2748_fib-1",
+        "description": "Dynamic Programing.2748_fib-1",
+        "peekOfCode": "n = int(input())\ndef fib(n):\n    lst = [1 for x in range(0, n + 1)]\n    for i in range(3, n + 1):\n        lst[i] = lst[i - 1] + lst[i - 2]\n    return lst[n]\nprint(fib(n))",
+        "detail": "Dynamic Programing.2748_fib-1",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2839_sugar_delivery",
+        "description": "Dynamic Programing.2839_sugar_delivery",
+        "peekOfCode": "N = int(input())\nfive_bucks = 0\nresult = [-1]\nwhile five_bucks * 5 <= N:\n    temp = (N - five_bucks * 5) % 3\n    if (N - five_bucks * 5) % 3 == 0:\n        result.append(five_bucks + (N - five_bucks * 5) // 3)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])",
+        "detail": "Dynamic Programing.2839_sugar_delivery",
+        "documentation": {}
+    },
+    {
+        "label": "five_bucks",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2839_sugar_delivery",
+        "description": "Dynamic Programing.2839_sugar_delivery",
+        "peekOfCode": "five_bucks = 0\nresult = [-1]\nwhile five_bucks * 5 <= N:\n    temp = (N - five_bucks * 5) % 3\n    if (N - five_bucks * 5) % 3 == 0:\n        result.append(five_bucks + (N - five_bucks * 5) // 3)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])\nelse:",
+        "detail": "Dynamic Programing.2839_sugar_delivery",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Dynamic Programing.2839_sugar_delivery",
+        "description": "Dynamic Programing.2839_sugar_delivery",
+        "peekOfCode": "result = [-1]\nwhile five_bucks * 5 <= N:\n    temp = (N - five_bucks * 5) % 3\n    if (N - five_bucks * 5) % 3 == 0:\n        result.append(five_bucks + (N - five_bucks * 5) // 3)\n    five_bucks += 1\nif len(result) == 1:\n    print(result[0])\nelse:\n    result.remove(-1)",
+        "detail": "Dynamic Programing.2839_sugar_delivery",
+        "documentation": {}
+    },
+    {
+        "label": "cook_func",
+        "kind": 2,
+        "importPath": "Greedy.10162_microwave",
+        "description": "Greedy.10162_microwave",
+        "peekOfCode": "def cook_func(micro_time, cook_time):    \n    if cook_time % 10 != 0:\n        print(-1)\n    else:\n        micro_count = [0, 0, 0]\n        for index in range(0, 3):\n            micro_count[index] += cook_time // micro_time[index]\n            cook_time %= micro_time[index]\n        print(micro_count[0], micro_count[1], micro_count[2])\ncook_func(micro_time, cook_time)",
+        "detail": "Greedy.10162_microwave",
+        "documentation": {}
+    },
+    {
+        "label": "micro_time",
+        "kind": 5,
+        "importPath": "Greedy.10162_microwave",
+        "description": "Greedy.10162_microwave",
+        "peekOfCode": "micro_time = [300, 60, 10]\ncook_time = int(input())\ndef cook_func(micro_time, cook_time):    \n    if cook_time % 10 != 0:\n        print(-1)\n    else:\n        micro_count = [0, 0, 0]\n        for index in range(0, 3):\n            micro_count[index] += cook_time // micro_time[index]\n            cook_time %= micro_time[index]",
+        "detail": "Greedy.10162_microwave",
+        "documentation": {}
+    },
+    {
+        "label": "cook_time",
+        "kind": 5,
+        "importPath": "Greedy.10162_microwave",
+        "description": "Greedy.10162_microwave",
+        "peekOfCode": "cook_time = int(input())\ndef cook_func(micro_time, cook_time):    \n    if cook_time % 10 != 0:\n        print(-1)\n    else:\n        micro_count = [0, 0, 0]\n        for index in range(0, 3):\n            micro_count[index] += cook_time // micro_time[index]\n            cook_time %= micro_time[index]\n        print(micro_count[0], micro_count[1], micro_count[2])",
+        "detail": "Greedy.10162_microwave",
+        "documentation": {}
+    },
+    {
+        "label": "num_X",
+        "kind": 2,
+        "importPath": "Greedy.1343_polyomino",
+        "description": "Greedy.1343_polyomino",
+        "peekOfCode": "def num_X(data):\n    count = 0\n    if data < len(board) - 1:\n        while board[data] == 'X':\n            count += 1\n            data += 1\n    return count\ndef polyomino_func():\n    result = []\n    index = 0",
+        "detail": "Greedy.1343_polyomino",
+        "documentation": {}
+    },
+    {
+        "label": "polyomino_func",
+        "kind": 2,
+        "importPath": "Greedy.1343_polyomino",
+        "description": "Greedy.1343_polyomino",
+        "peekOfCode": "def polyomino_func():\n    result = []\n    index = 0\n    while index < len(board):\n        count = 0\n        if board[index] == 'X':\n            while index < len(board) and board[index] == 'X':\n                count += 1\n                index += 1\n        elif board[index] == '.':",
+        "detail": "Greedy.1343_polyomino",
+        "documentation": {}
+    },
+    {
+        "label": "board",
+        "kind": 5,
+        "importPath": "Greedy.1343_polyomino",
+        "description": "Greedy.1343_polyomino",
+        "peekOfCode": "board = str(input())\ndef num_X(data):\n    count = 0\n    if data < len(board) - 1:\n        while board[data] == 'X':\n            count += 1\n            data += 1\n    return count\ndef polyomino_func():\n    result = []",
+        "detail": "Greedy.1343_polyomino",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Greedy.1417_vote",
+        "description": "Greedy.1417_vote",
+        "peekOfCode": "N = int(input())\nceleb = []\nfor _ in range(N):\n    celeb.append(int(input()))\nif len(celeb) == 1:\n    print(0)\nelse:\n    count = 0\n    while True:\n        if celeb[0] <= max(celeb[1:]):",
+        "detail": "Greedy.1417_vote",
+        "documentation": {}
+    },
+    {
+        "label": "celeb",
+        "kind": 5,
+        "importPath": "Greedy.1417_vote",
+        "description": "Greedy.1417_vote",
+        "peekOfCode": "celeb = []\nfor _ in range(N):\n    celeb.append(int(input()))\nif len(celeb) == 1:\n    print(0)\nelse:\n    count = 0\n    while True:\n        if celeb[0] <= max(celeb[1:]):\n            index = celeb[1:].index(max(celeb[1:]))",
+        "detail": "Greedy.1417_vote",
+        "documentation": {}
+    },
+    {
+        "label": "S",
+        "kind": 5,
+        "importPath": "Greedy.1439_reverse",
+        "description": "Greedy.1439_reverse",
+        "peekOfCode": "S = input()\ncheck = [0, 0]\nindex = 0\nlength = len(S)\nwhile index < length:\n    if index < length and S[index] == '0':\n        while index < length and S[index] == '0':\n            index += 1\n        check[0] += 1\n    if index < length and S[index] == '1':",
+        "detail": "Greedy.1439_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "check",
+        "kind": 5,
+        "importPath": "Greedy.1439_reverse",
+        "description": "Greedy.1439_reverse",
+        "peekOfCode": "check = [0, 0]\nindex = 0\nlength = len(S)\nwhile index < length:\n    if index < length and S[index] == '0':\n        while index < length and S[index] == '0':\n            index += 1\n        check[0] += 1\n    if index < length and S[index] == '1':\n        while index < length and S[index] == '1':",
+        "detail": "Greedy.1439_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "Greedy.1439_reverse",
+        "description": "Greedy.1439_reverse",
+        "peekOfCode": "index = 0\nlength = len(S)\nwhile index < length:\n    if index < length and S[index] == '0':\n        while index < length and S[index] == '0':\n            index += 1\n        check[0] += 1\n    if index < length and S[index] == '1':\n        while index < length and S[index] == '1':\n            index += 1",
+        "detail": "Greedy.1439_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "Greedy.1439_reverse",
+        "description": "Greedy.1439_reverse",
+        "peekOfCode": "length = len(S)\nwhile index < length:\n    if index < length and S[index] == '0':\n        while index < length and S[index] == '0':\n            index += 1\n        check[0] += 1\n    if index < length and S[index] == '1':\n        while index < length and S[index] == '1':\n            index += 1\n        check[1] += 1",
+        "detail": "Greedy.1439_reverse",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Greedy.14487_filial_duty",
+        "description": "Greedy.14487_filial_duty",
+        "peekOfCode": "N = int(input())\nprice = list(map(int, input().split()))\nif len(price) > 1:\n    price.remove(max(price))\nprint(sum(price))",
+        "detail": "Greedy.14487_filial_duty",
+        "documentation": {}
+    },
+    {
+        "label": "price",
+        "kind": 5,
+        "importPath": "Greedy.14487_filial_duty",
+        "description": "Greedy.14487_filial_duty",
+        "peekOfCode": "price = list(map(int, input().split()))\nif len(price) > 1:\n    price.remove(max(price))\nprint(sum(price))",
+        "detail": "Greedy.14487_filial_duty",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Greedy.14720_milk_party",
+        "description": "Greedy.14720_milk_party",
+        "peekOfCode": "N = int(input())\nroad = list(map(int, input().split()))\nstart = 0\ncount = 1\nfront = 0\nfor index in range(1, len(road)):\n    if road[start] != 0:\n        start += 1\n        front = start\n    else:",
+        "detail": "Greedy.14720_milk_party",
+        "documentation": {}
+    },
+    {
+        "label": "road",
+        "kind": 5,
+        "importPath": "Greedy.14720_milk_party",
+        "description": "Greedy.14720_milk_party",
+        "peekOfCode": "road = list(map(int, input().split()))\nstart = 0\ncount = 1\nfront = 0\nfor index in range(1, len(road)):\n    if road[start] != 0:\n        start += 1\n        front = start\n    else:\n        if road[front] == 1 or road[front] == 0:",
+        "detail": "Greedy.14720_milk_party",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "Greedy.14720_milk_party",
+        "description": "Greedy.14720_milk_party",
+        "peekOfCode": "start = 0\ncount = 1\nfront = 0\nfor index in range(1, len(road)):\n    if road[start] != 0:\n        start += 1\n        front = start\n    else:\n        if road[front] == 1 or road[front] == 0:\n            if road[index] == road[front] + 1:",
+        "detail": "Greedy.14720_milk_party",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Greedy.14720_milk_party",
+        "description": "Greedy.14720_milk_party",
+        "peekOfCode": "count = 1\nfront = 0\nfor index in range(1, len(road)):\n    if road[start] != 0:\n        start += 1\n        front = start\n    else:\n        if road[front] == 1 or road[front] == 0:\n            if road[index] == road[front] + 1:\n                front = index",
+        "detail": "Greedy.14720_milk_party",
+        "documentation": {}
+    },
+    {
+        "label": "front",
+        "kind": 5,
+        "importPath": "Greedy.14720_milk_party",
+        "description": "Greedy.14720_milk_party",
+        "peekOfCode": "front = 0\nfor index in range(1, len(road)):\n    if road[start] != 0:\n        start += 1\n        front = start\n    else:\n        if road[front] == 1 or road[front] == 0:\n            if road[index] == road[front] + 1:\n                front = index\n                count += 1",
+        "detail": "Greedy.14720_milk_party",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Greedy.19564_alpha",
+        "description": "Greedy.19564_alpha",
+        "peekOfCode": "arr = str(input())\ncount = 1\nfor index in range(len(arr) - 1):\n    if ord(arr[index]) >= ord(arr[index + 1]):\n        count += 1\nprint(count)",
+        "detail": "Greedy.19564_alpha",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Greedy.19564_alpha",
+        "description": "Greedy.19564_alpha",
+        "peekOfCode": "count = 1\nfor index in range(len(arr) - 1):\n    if ord(arr[index]) >= ord(arr[index + 1]):\n        count += 1\nprint(count)",
+        "detail": "Greedy.19564_alpha",
+        "documentation": {}
+    },
+    {
+        "label": "now_tired",
+        "kind": 5,
+        "importPath": "Greedy.22864_tired",
+        "description": "Greedy.22864_tired",
+        "peekOfCode": "now_tired = 0\nnow_tasks = 0\nfor _ in range(24):\n    if now_tired < 0:\n        now_tired = 0\n    if now_tired + get_tired > max_tired:\n        now_tired -= dec_tired\n    else:\n        now_tired += get_tired\n        now_tasks += can_work",
+        "detail": "Greedy.22864_tired",
+        "documentation": {}
+    },
+    {
+        "label": "now_tasks",
+        "kind": 5,
+        "importPath": "Greedy.22864_tired",
+        "description": "Greedy.22864_tired",
+        "peekOfCode": "now_tasks = 0\nfor _ in range(24):\n    if now_tired < 0:\n        now_tired = 0\n    if now_tired + get_tired > max_tired:\n        now_tired -= dec_tired\n    else:\n        now_tired += get_tired\n        now_tasks += can_work\nprint(now_tasks)",
+        "detail": "Greedy.22864_tired",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Greedy.2720_CEO_donghyuk",
+        "description": "Greedy.2720_CEO_donghyuk",
+        "peekOfCode": "N = int(input())\ncoins = [25, 10, 5, 1]\nfor _ in range(N):\n    change = int(input())\n    coins_count = [0, 0, 0, 0]\n    for index in range(4):\n        coins_count[index] += change // coins[index]\n        change %= coins[index]\nprint(coins_count[0], coins_count[1], coins_count[2], coins_count[3])",
+        "detail": "Greedy.2720_CEO_donghyuk",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Greedy.2720_CEO_donghyuk",
+        "description": "Greedy.2720_CEO_donghyuk",
+        "peekOfCode": "coins = [25, 10, 5, 1]\nfor _ in range(N):\n    change = int(input())\n    coins_count = [0, 0, 0, 0]\n    for index in range(4):\n        coins_count[index] += change // coins[index]\n        change %= coins[index]\nprint(coins_count[0], coins_count[1], coins_count[2], coins_count[3])",
+        "detail": "Greedy.2720_CEO_donghyuk",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Greedy.2810_cup_holder",
+        "description": "Greedy.2810_cup_holder",
+        "peekOfCode": "N = int(input())\nseats = str(input())\nif len(seats) == 1:\n    print(1)\nelse:\n    seats = seats.replace('S', '*')\n    seats = seats.replace('LL', '*')\n    print(len(seats) + 1)",
+        "detail": "Greedy.2810_cup_holder",
+        "documentation": {}
+    },
+    {
+        "label": "seats",
+        "kind": 5,
+        "importPath": "Greedy.2810_cup_holder",
+        "description": "Greedy.2810_cup_holder",
+        "peekOfCode": "seats = str(input())\nif len(seats) == 1:\n    print(1)\nelse:\n    seats = seats.replace('S', '*')\n    seats = seats.replace('LL', '*')\n    print(len(seats) + 1)",
+        "detail": "Greedy.2810_cup_holder",
+        "documentation": {}
+    },
+    {
+        "label": "max_A",
+        "kind": 5,
+        "importPath": "Greedy.2864_five_and_six",
+        "description": "Greedy.2864_five_and_six",
+        "peekOfCode": "max_A = A.replace(\"5\", \"6\")\nmax_B = B.replace(\"5\", \"6\")\nmin_A = A.replace(\"6\", \"5\")\nmin_B = B.replace(\"6\", \"5\")\nprint(int(min_A) + int(min_B), int(max_A) + int(max_B))",
+        "detail": "Greedy.2864_five_and_six",
+        "documentation": {}
+    },
+    {
+        "label": "max_B",
+        "kind": 5,
+        "importPath": "Greedy.2864_five_and_six",
+        "description": "Greedy.2864_five_and_six",
+        "peekOfCode": "max_B = B.replace(\"5\", \"6\")\nmin_A = A.replace(\"6\", \"5\")\nmin_B = B.replace(\"6\", \"5\")\nprint(int(min_A) + int(min_B), int(max_A) + int(max_B))",
+        "detail": "Greedy.2864_five_and_six",
+        "documentation": {}
+    },
+    {
+        "label": "min_A",
+        "kind": 5,
+        "importPath": "Greedy.2864_five_and_six",
+        "description": "Greedy.2864_five_and_six",
+        "peekOfCode": "min_A = A.replace(\"6\", \"5\")\nmin_B = B.replace(\"6\", \"5\")\nprint(int(min_A) + int(min_B), int(max_A) + int(max_B))",
+        "detail": "Greedy.2864_five_and_six",
+        "documentation": {}
+    },
+    {
+        "label": "min_B",
+        "kind": 5,
+        "importPath": "Greedy.2864_five_and_six",
+        "description": "Greedy.2864_five_and_six",
+        "peekOfCode": "min_B = B.replace(\"6\", \"5\")\nprint(int(min_A) + int(min_B), int(max_A) + int(max_B))",
+        "detail": "Greedy.2864_five_and_six",
+        "documentation": {}
+    },
+    {
+        "label": "round_result",
+        "kind": 2,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "def round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):\n        count = 1\n    return count\ndef set_winning_unit(data):\n    if data == 'S':\n        return 'R'",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "set_winning_unit",
+        "kind": 2,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "def set_winning_unit(data):\n    if data == 'S':\n        return 'R'\n    elif data == 'R':\n        return 'P'\n    else:\n        return 'S'\ndef winning_func(friends, data):\n    arr = []\n    RSP = []",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "winning_func",
+        "kind": 2,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "def winning_func(friends, data):\n    arr = []\n    RSP = []\n    for index in range(round):\n        RSP.append(set_winning_unit(friends[index]))\n    #for index in range(1, friends_count):\n        #if round_result(RSP[index], friends[index][data]):\n            #return\nwinning = []\nfor round_index in range(round):",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "round",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "round = int(input())\nmy = input()\nfriends_count = int(input())\nfriends = [input() for _ in range(friends_count)]\nresult1 = 0\nresult2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "my",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "my = input()\nfriends_count = int(input())\nfriends = [input() for _ in range(friends_count)]\nresult1 = 0\nresult2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "friends_count",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "friends_count = int(input())\nfriends = [input() for _ in range(friends_count)]\nresult1 = 0\nresult2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):\n        count = 1",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "friends = [input() for _ in range(friends_count)]\nresult1 = 0\nresult2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):\n        count = 1\n    return count",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "result1",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "result1 = 0\nresult2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):\n        count = 1\n    return count\ndef set_winning_unit(data):",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "result2",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "result2 = 0\ndef round_result(my, fr):\n    count = 0\n    if (my == 'R' and fr == 'S') or (my == 'S' and fr == 'P') or (my == 'P' and fr == 'R'):\n        count = 2\n    elif (my == fr):\n        count = 1\n    return count\ndef set_winning_unit(data):\n    if data == 'S':",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "winning",
+        "kind": 5,
+        "importPath": "Greedy.2930_RSP",
+        "description": "Greedy.2930_RSP",
+        "peekOfCode": "winning = []\nfor round_index in range(round):\n    for friends_index in range(friends_count):\n        result1 += round_result(my[round_index], friends[friends_index][round_index])\n        result2 += round_result(winning[round_index], friends[friends_index][round_index])\nprint(winning)\nprint(result1)\nprint(result2)",
+        "detail": "Greedy.2930_RSP",
+        "documentation": {}
+    },
+    {
+        "label": "product_price",
+        "kind": 5,
+        "importPath": "Greedy.5585_change",
+        "description": "Greedy.5585_change",
+        "peekOfCode": "product_price = int(input())\nchange = 1000 - product_price\ncoins = [500, 100, 50, 10, 5, 1]\ncount = 0\nfor index in range(len(coins)):\n    count += change // coins[index]\n    change %= coins[index]\nprint(count)",
+        "detail": "Greedy.5585_change",
+        "documentation": {}
+    },
+    {
+        "label": "change",
+        "kind": 5,
+        "importPath": "Greedy.5585_change",
+        "description": "Greedy.5585_change",
+        "peekOfCode": "change = 1000 - product_price\ncoins = [500, 100, 50, 10, 5, 1]\ncount = 0\nfor index in range(len(coins)):\n    count += change // coins[index]\n    change %= coins[index]\nprint(count)",
+        "detail": "Greedy.5585_change",
+        "documentation": {}
+    },
+    {
+        "label": "coins",
+        "kind": 5,
+        "importPath": "Greedy.5585_change",
+        "description": "Greedy.5585_change",
+        "peekOfCode": "coins = [500, 100, 50, 10, 5, 1]\ncount = 0\nfor index in range(len(coins)):\n    count += change // coins[index]\n    change %= coins[index]\nprint(count)",
+        "detail": "Greedy.5585_change",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Greedy.5585_change",
+        "description": "Greedy.5585_change",
+        "peekOfCode": "count = 0\nfor index in range(len(coins)):\n    count += change // coins[index]\n    change %= coins[index]\nprint(count)",
+        "detail": "Greedy.5585_change",
+        "documentation": {}
+    }
+]
